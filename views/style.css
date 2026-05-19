@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #eef3f7;
+    color: #1d2733;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu{
+    background: linear-gradient(90deg, #0b253a, #123d5a);
+    padding: 15px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.menu a{
+    color: white;
+    margin-right: 22px;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: #ffd166;
+}
+
+.container{
+    width: 90%;
+    margin: 28px auto;
+    background: white;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+}
+
+.auth-page{
+    min-height: 100vh;
+    display: flex;
+    background: linear-gradient(135deg, #0b253a, #2474a6);
+}
+
+.auth-left{
+    width: 45%;
+    color: white;
+    padding: 80px 60px;
+    background: rgba(0,0,0,0.18);
+}
+
+.auth-left h1{
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.auth-right{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-card{
+    width: 430px;
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+}
+
+h1,h2,h3{
+    color: #123d5a;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+}
+
+td, th{
+    border: 1px solid #d6dee6;
+    padding: 12px;
+    text-align: center;
+}
+
+th{
+    background: #123d5a;
+    color: white;
+}
+
+form table{
+    width: 85%;
+    margin: 0 auto;
+}
+
+form table td:first-child{
+    width: 35%;
+    text-align: left;
+    font-weight: bold;
+    color: #123d5a;
+}
+
+form table td:nth-child(2){
+    width: 65%;
+}
+
+form table td:nth-child(3){
+    width: 0;
+    padding: 0;
+    border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea{
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #bfd0dc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+textarea{
+    height: 90px;
+    resize: none;
+}
+
+input[type="file"]{
+    width: 95%;
+}
+
+input[type="checkbox"]{
+    width: auto;
+}
+
+.btn,
+input[type="submit"],
+button{
+    background: #125c8e;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn:hover,
+input[type="submit"]:hover,
+button:hover{
+    background: #0b3f64;
+}
+
+.danger-btn{
+    background: #b00020;
+}
+
+.card-row{
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.stat-card{
+    flex: 1;
+    min-width: 190px;
+    background: #f7fbff;
+    border-left: 5px solid #125c8e;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+.stat-card h3{
+    margin: 0;
+    font-size: 16px;
+}
+
+.stat-card p{
+    font-size: 28px;
+    margin: 10px 0 0;
+    font-weight: bold;
+}
+
+.badge{
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+}
+
+.available{
+    color: #147a36;
+    background: #dff8e8;
+}
+
+.booked{
+    color: #946200;
+    background: #fff2c8;
+}
+
+.maintenance{
+    color: #9a1b1b;
+    background: #ffe0e0;
+}
+
+.pending{
+    color: #946200;
+    background: #fff2c8;
+}
+
+.confirmed{
+    color: #147a36;
+    background: #dff8e8;
+}
+
+.cancelled{
+    color: #9a1b1b;
+    background: #ffe0e0;
+}
+
+.checked{
+    color: #125c8e;
+    background: #e4f1ff;
+}
+
+.error{
+    color: #b00020;
+    font-weight: bold;
+}
+
+.success{
+    color: #147a36;
+    font-weight: bold;
+}
+
+.edit{
+    color: #125c8e;
+    font-weight: bold;
+}
+
+.delete{
+    color: #b00020;
+    font-weight: bold;
+}
+
+.room-card{
+    display: inline-block;
+    width: 290px;
+    margin: 12px;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.10);
+    vertical-align: top;
+}
+
+.room-card img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.room-card-body{
+    padding: 16px;
+}
+
+.empty-message{
+    background: #fff2c8;
+    padding: 14px;
+    border-radius: 8px;
+    color: #946200;
+    font-weight: bold;
+}
